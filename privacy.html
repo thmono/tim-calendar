@@ -3,48 +3,102 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>隐私政策 · Tim Calendar</title>
+<title>隐私政策 · thmono Calendar</title>
+<meta name="description" content="thmono Calendar 是一个个人自用的 Google 日历客户端，本页面说明其用途与数据处理方式。">
 <style>
 :root{color-scheme:light dark}
-body{max-width:720px;margin:0 auto;padding:48px 24px;font:16px/1.75 -apple-system,"SF Pro SC","PingFang SC",system-ui,sans-serif;color:#1a1a1a;background:#fff}
+body{max-width:760px;margin:0 auto;padding:48px 24px;font:16px/1.8 -apple-system,"SF Pro SC","PingFang SC",system-ui,sans-serif;color:#1a1a1a;background:#fff}
 @media (prefers-color-scheme:dark){body{background:#111;color:#e6e6e6}}
-h1{font-size:24px;margin:0 0 8px}
-h2{font-size:18px;margin:28px 0 8px}
-p,li{color:inherit}
-.meta{color:#888;font-size:14px}
+h1{font-size:26px;margin:0 0 6px}
+h2{font-size:18px;margin:30px 0 8px}
+h3{font-size:16px;margin:20px 0 6px}
+.meta{color:#888;font-size:14px;margin-bottom:24px}
 a{color:#5b8def}
-ul{padding-left:1.2em}
+ul,ol{padding-left:1.3em}
+code{background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px;font-size:.9em}
+.box{border-left:3px solid #5b8def;padding:10px 16px;background:rgba(91,141,239,.08);margin:18px 0}
 </style>
 </head>
 <body>
-<h1>隐私政策 · Tim Calendar</h1>
-<p class="meta">最后更新：2026 年 11 月 12 日</p>
+<h1>隐私政策 · thmono Calendar</h1>
+<p class="meta">生效日期：2026 年 11 月 12 日 · 最后更新：2026 年 11 月 12 日</p>
 
-<h2>这是什么</h2>
-<p>「Tim Calendar」是一个<b>个人自用</b>的 Google API 客户端，仅由账号所有者在自己的 Mac 上运行，用于读取和创建自己的 Google 日历事件，以及在需要时读写自己的 Google 表格与文档。本应用不向任何第三方提供服务，也不对外开放注册。</p>
+<div class="box"><b>本页面无需登录即可阅读。</b>本政策适用于 Google OAuth 应用「thmono Calendar」。</div>
 
-<h2>访问哪些数据</h2>
-<p>经用户（即账号所有者本人）在 Google 授权页面明确同意后，本应用访问：</p>
+<h2>1. 本应用是什么，谁在运营</h2>
+<p>thmono Calendar 是一个<b>个人自用、非商业</b>的 Google 日历客户端，由账号所有者本人（联系方式见第 12 节）在自己的 Mac 电脑上运行。
+它<b>没有自建服务器</b>，<b>没有云端数据库</b>，不向任何其他用户提供服务，也不开放注册。</p>
+
+<h2>2. 访问哪些 Google 用户数据</h2>
+<p>只有在账号所有者本人于 Google 授权页面明确点击同意之后，本应用才会访问以下数据：</p>
 <ul>
-<li>Google 日历：读取现有事件、创建与删除事件</li>
-<li>Google Drive：仅访问本应用创建或用户主动打开的文件</li>
-<li>Google 表格、Google 文档：在用户要求时读取或写入内容</li>
+<li><b>Google 日历（calendar）</b>：读取本人的日历与事件列表，创建、修改、删除本人的日历事件与其提醒设置。</li>
+<li><b>Google Drive（drive.file）</b>：仅能访问<b>本应用自己创建的文件</b>或<b>用户主动选择/打开的文件</b>；无法浏览账号中已有的其他文件。</li>
+<li><b>Google 表格（spreadsheets）</b>：在用户明确要求时，读取或写入指定的表格内容。</li>
+<li><b>Google 文档（documents）</b>：在用户明确要求时，读取或写入指定的文档内容。</li>
+</ul>
+<p>本应用<b>不</b>申请访问 Gmail 邮件、通讯录、Google 相册、位置、健康数据或任何其他数据范围。</p>
+
+<h2>3. 数据用于什么目的</h2>
+<p>仅用于实现第 2 节列出的、由账号所有者本人主动发起的操作，例如「把我明天的会议写进日历」「这周我有哪些安排」。
+<b>不用于</b>广告投放、用户画像、数据分析、信用评估、内容推荐，或任何与本应用功能无关的用途。</p>
+
+<h2>4. 人工智能使用声明</h2>
+<ul>
+<li>Google 用户数据<b>不会</b>被用于训练、微调或改进任何人工智能模型。</li>
+<li>Google 用户数据<b>不会</b>被用于生成 AI NCII（AI 生成的、未经当事人同意的私密图像）。本应用不具备图像生成、图像编辑或人脸合成能力。</li>
+<li>本应用不向任何大语言模型厂商上传 Google 用户数据用于训练。</li>
 </ul>
 
-<h2>数据如何存放</h2>
+<h2>5. 数据存储位置、传输与保留期限</h2>
 <ul>
-<li>OAuth 访问令牌与刷新令牌保存在<b>用户本机</b>（macOS 用户目录内，权限仅本人可读），不会上传到任何服务器。</li>
-<li>本应用<b>没有</b>自建服务器，不存在云端数据库。</li>
-<li>不收集、不记录、不传输用户的日历内容、文件名或任何个人信息到第三方。</li>
+<li>OAuth 访问令牌与刷新令牌保存在账号所有者本人的 macOS 设备上，文件权限设置为<b>仅本人可读</b>（<code>600</code>）。</li>
+<li>令牌仅通过 <b>HTTPS/TLS</b> 与 Google 官方 API 端点（<code>*.googleapis.com</code>、<code>oauth2.googleapis.com</code>）通信。</li>
+<li>本应用<b>没有</b>第三方服务器，因此不存在由运营方掌握的云端数据副本。</li>
+<li>日历/表格/文档的实际内容保存在 Google 账号内，归账号所有者所有；本应用不另行复制留存。</li>
+<li><b>保留期限</b>：本机令牌保留至用户删除令牌文件或在 Google 侧撤销授权为止；授权撤销后令牌立即失效且不可用。</li>
 </ul>
 
-<h2>数据共享</h2>
-<p>不共享。除 Google 官方 API 端点外，本应用不向任何第三方发送数据，不包含广告、统计或追踪 SDK。</p>
+<h2>6. 数据共享、转让与第三方</h2>
+<ul>
+<li><b>不共享</b>：除与 Google 官方 API 的必要通信外，本应用不向任何第三方发送、共享或披露数据。</li>
+<li><b>不转让</b>：本应用不涉及兼并、收购或资产出售，不存在数据转让场景。</li>
+<li><b>无第三方 SDK</b>：不包含广告 SDK、统计 SDK、追踪像素或设备指纹采集。</li>
+<li>不向数据经纪商、广告网络或任何商业伙伴提供数据。</li>
+</ul>
 
-<h2>删除与撤销</h2>
-<p>用户可随时在 <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> 撤销本应用的访问权限，撤销后本应用立即无法再访问任何数据。本机令牌文件可随时删除。</p>
+<h2>7. 数据安全措施</h2>
+<ul>
+<li>所有网络通信强制使用 TLS（HTTPS）。</li>
+<li>令牌文件仅保存在本机用户目录，权限限定为文件所有者可读；系统级钥匙串用于敏感凭据。</li>
+<li>访问令牌短期有效并自动刷新，刷新令牌可随时在 Google 侧撤销。</li>
+<li>本机为单人使用环境，不存在多用户共享账号或越权访问其他用户数据的可能。</li>
+</ul>
 
-<h2>联系方式</h2>
-<p>账号所有者本人：thmono@gmail.com</p>
+<h2>8. 用户的权利与控制</h2>
+<ul>
+<li><b>撤销授权</b>：随时访问 <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> 移除本应用的访问权限，撤销后本应用立即无法再访问任何数据。</li>
+<li><b>删除本机数据</b>：删除本机令牌文件即可清除本应用保存的全部凭据。</li>
+<li><b>删除内容数据</b>：日历事件、表格、文档均由账号所有者在 Google 账号内自行删除。</li>
+<li><b>拒绝授权</b>：可不授权或在授权页面取消，不影响设备其他功能的使用。</li>
+</ul>
+
+<h2>9. 有限使用声明（Limited Use）</h2>
+<p>本应用对从 Google API 获取的用户数据的处理，遵守
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服务用户数据政策</a>，
+包括其中的「有限使用（Limited Use）」要求：数据仅用于提供本政策中明确披露的功能，
+不用于广告，不转售，不用于训练人工智能模型，也不允许人工读取（除为用户提供支持、出于安全目的、遵守法律或用户明确要求的情形）。</p>
+
+<h2>10. 儿童隐私</h2>
+<p>本应用仅供账号所有者本人使用，不面向儿童，也不会有意收集儿童的个人信息。</p>
+
+<h2>11. 本政策的变更</h2>
+<p>若本应用的数据处理方式发生变化，本政策将同步更新并修改页首的「最后更新」日期。
+由于本应用不收集访客信息、不提供注册，因此不存在向用户推送变更通知的通道；最新版本始终以本页面为准。</p>
+
+<h2>12. 联系方式</h2>
+<p>账号所有者本人：<a href="mailto:thmono@gmail.com">thmono@gmail.com</a></p>
+<p>相关链接：<a href="index.html">应用首页</a> ·
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服务用户数据政策</a></p>
 </body>
 </html>
